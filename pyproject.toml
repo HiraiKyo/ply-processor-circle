@@ -3,7 +3,7 @@ test = {cmd = "dotenv --file envs/.env.development run -- pytest", help = "Run u
 dev-python = {cmd = "dotenv --file envs/.env.development run -- python", help = "Run python with dev environment."}
 
 [tool.poetry]
-name = "example_pyproject"
+name = "src"
 version = "0.1.0"
 description = ""
 authors = ["HiraiKyo <kyo.mikhael@gmail.com>"]
@@ -11,7 +11,7 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
 python-dotenv = "^1.0.1"
 pydantic = "^2.7.4"
 
@@ -23,7 +23,7 @@ pytest-env = "^1.1.3"
 taskipy = "^1.13.0"
 
 [tool.ruff]
-target-version = "py311"
+target-version = "py38"
 line-length = 120
 
 [tool.mypy]
